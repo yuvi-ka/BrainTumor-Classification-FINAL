@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Upload MRI - NeuroCanvas</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(to right, rgba(18, 172, 142, 0.9), rgba(18, 172, 142, 0.7)), url('assets/header.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .upload__container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .upload__container h2 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .upload__container p {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+    .upload__btn {
+      padding: 0.75rem 2rem;
+      outline: none;
+      border: none;
+      font-size: 1rem;
+      white-space: nowrap;
+      color: #fff;
+      background-color: #fb923c;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .upload__btn:hover {
+      background-color: #f97316;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="upload__container">
+    <h2>Upload MRI</h2>
+    <p>Click the button below to upload your MRI scan:</p>
+    <button class="upload__btn" id="uploadBtn">Upload MRI</button>
+    <input type="file" id="fileInput" style="display: none;" accept=".jpg, .jpeg, .png, .gif, .bmp, .pdf">
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 NeuroCanvas. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('uploadBtn').addEventListener('click', function() {
+      document.getElementById('fileInput').click();
+    });
+  </script>
+</body>
+</html>

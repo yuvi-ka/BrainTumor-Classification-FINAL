@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!-- ===( NEUROCANVAS )=== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <title>Bennett University | Neuro Canvas</title>
+  </head>
+  <body>
+      <header>
+
+      <nav class="section__container nav__container">
+        <div class="nav__logo">Neuro<span>Canvas</span></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home-section">Home</a></li>
+          <li class="link"><a href="#about-section">About Us</a></li>
+          <li class="link"><a href="#service-section">Services</a></li>
+          <li class="link"><a href="#Why-section">Why Us</a></li>
+          <li class="link"><a href="#contact-section">Our Team</a></li>
+        </ul>
+        <button class="btn"><a href="https://www.bennett.edu.in/">Bennett University</a></button>
+
+      </nav>
+      <section id="home-section" class="section__container">
+
+        <div class="section__container header__container">
+          <div class="header__content">
+            <h1>Elevating Care with Precision through Innovative Technology</h1>
+            <p>
+              Welcome to NeuroCanvas, where exceptional patient experiences are at the heart of everything we do. 
+              With a commitment to compassionate care, cutting-edge technology, and a patient-centered approach, 
+              we're dedicated to your neurological well-being. Trust NeuroCanvas with your health and discover 
+              the difference in personalized neurocare.
+            </p>
+            <a href="{{ url_for('upload') }}" class="btn">Get Diagnosis</a>
+          </div>
+          <div class="header__form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <h4>Contact Us</h4>
+              <input type="hidden" name="access_key" value="9dcfa2fd-deb2-42bc-8054-5715edfaeeb7">
+
+              <input type="text" name="name" placeholder="Your Name" />
+              <input type="email" name="email" placeholder="Email Id" />
+              <input type="text" name="phone" placeholder="Phone no." />
+              <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+              <button type="submit" class="btn form__btn">Send</button>
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section id="service-section" class="section__container service__container">      
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Our Special service</h2>
+          <p>
+            At NeuroCanvas, our commitment extends far beyond diagnosis. In the event of tumor detection, we collaborate closely with expert neurologists to ensure you receive comprehensive and personalized treatment. Rest assured, your neurological health is our priority.
+          </p>
+        </div>
+        <button class="service__btn" id="scrollToHome">Contact Us</button>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-microscope-line"></i></span>
+          <h4>Early Detection Center</h4>
+          <p>
+            Cutting-edge technology for early identification of brain tumors, ensuring timely intervention and improved outcomes for patients.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-mental-health-line"></i></span>
+          <h4>Personalized Treatment Hub</h4>
+          <p>
+            Tailored treatment plans based on precise brain tumor predictions, optimizing therapy and enhancing patient care.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-hospital-line"></i></span>
+          <h4>Comprehensive Care Clinic</h4>
+          <p>
+            Holistic approach to brain tumor management, offering multidisciplinary care and support throughout the patient's journey.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section id="about-section" class="section__container">     
+      <div class="about__container">
+        <div class="about__content">
+          <h2 class="section__header">About Us</h2>
+          <p>
+            Welcome to NeuroCanvas, your trusted online healthcare platform dedicated to enhancing neurological well-being. We're your go-to destination for reliable information and valuable resources to support you on your health journey.
+          </p>
+          <p>
+            Explore our curated collection of expertly crafted articles and guides, covering a diverse array of neurological topics. From understanding brain health to managing neurological conditions, our content is designed to educate, inspire, and empower you to make informed decisions about your neurological wellness.
+          </p>
+          <p>
+            Discover practical tips and advice to optimize your brain health and overall well-being. We believe that even small lifestyle changes can make a big difference in your neurological health, and we're here to provide the guidance and support you need to achieve your health goals.
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="static/assets/pic5.jpg" alt="about" />
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Why-section" class="section__container">
+      <div class="why__image">
+        <img src="static/assets/pic6.jpg" alt="why choose us" />
+      </div>
+      <div class="why__content">
+        <h2 class="section__header">Why Choose Us</h2>
+        <p>
+          Choose NeuroCanvas technology for cutting-edge innovation that revolutionizes brain health, ensuring precise predictions and personalized care for optimal outcomes.
+        </p>
+        <div class="why__grid">
+          <span><i class="ri-hand-heart-line"></i></span>
+          <div>
+            <h4>Convenient Analysis</h4>
+            <p>
+              Say goodbye to hospital visits with our technology, offering hassle-free MRI analysis from the comfort of your home.
+            </p>
+          </div>
+          <span><i class="ri-truck-line"></i></span>
+          <div>
+            <h4>Cost-Effective Solutions</h4>
+            <p>
+              Save money on expensive hospital bills with NeuroCanvas technology, providing accurate analysis at a fraction of the cost.
+            </p>
+          </div>
+          <span><i class="ri-hospital-line"></i></span>
+          <div>
+            <h4>Efficiency at Your Fingertips</h4>
+            <p>
+              With our technology, access fast and efficient MRI analysis, saving you time and ensuring prompt diagnosis and treatment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="section__container">
+      <div class="doctors__header">
+        <div class="doctors__header__content">
+          <h2 class="section__header">Our Team</h2>
+          <p>
+            We take pride in our exceptional team of developers and doctors, each a specialist
+            in their respective fields.
+          </p>
+        </div>
+        <div class="doctors__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="doctors__grid">
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="static/assets/kanika photo.jpg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Kanika</h4>
+          <p>E22CSEU0119</p>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="static/assets/yuvika photo.jpg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Yuvika Mishra</h4>
+          <p>E22CSEU0120</p>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="static/assets/kashish photo.jpg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Kashish Chaturvedi</h4>
+          <p>E22CSEU0098</p>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__card__image">
+            <img src="static/assets/riyan photo.jpg" alt="doctor" />
+            <div class="doctors__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+          <h4>Riyan vats</h4>
+          <p>E22CSEU0114</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Neuro<span>Canvas</span></h3>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and accurate diagnosis based on your MRIs.
+          </p>
+          <p>
+            We've collaborated with the best doctors in the industry to develop this technology and give you accurate diagnosis. 
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Work With Us</p>
+          <p>Our Blog</p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p>Search Terms</p>
+          <p>Advance Search</p>
+          <p>Privacy Policy</p>
+          <p>Collaborators</p>
+          <p>Other projects</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i> Bennet University, Greater Noida
+          </p>
+          <p><i class="ri-mail-fill"></i> support@care.com</p>
+          <p><i class="ri-phone-fill"></i> (+91) 8178392166</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>Copyright © 2024 gauthulays. All rights reserved.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>]
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+    <script>
+      document.getElementById('scrollToHome').addEventListener('click', function() {
+        document.querySelector('#home-section').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    </script>
+    
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+    
+        // Perform any login/authentication logic here
+    
+        // Redirect to upload.html
+        window.location.href = 'upload.html';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('path/to/your/background_image.jpg'); /* Specify the path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    background-color:  rgba(31, 172, 125, 0.7); /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+header {
+    background-image: linear-gradient(
+        to right,
+        rgba(18, 172, 142, 0.9),
+        rgba(18, 172, 142, 0.7)
+      ),
+      url("assets/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .upload__container {
+    max-width: 600px;
+    margin: 100px auto; /* Adjust the margin as needed */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .upload__container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .upload__btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .upload__btn:hover {
+    background-color: #2980b9;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(31, 172, 125, 0.7); /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
